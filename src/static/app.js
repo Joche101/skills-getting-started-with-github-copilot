@@ -1,5 +1,64 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const activitiesList = document.getElementById("activities-list");
+document.addEventListener("DOMContentLoaded", () => {document.addEventListener("DOMContentLoaded", () => {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+});  fetchActivities();  }    }      console.error("Error fetching activities:", error);      activitiesList.innerHTML = "<p>Failed to load activities. Please try again later.</p>";    } catch (error) {      });        activitySelect.appendChild(option);        option.textContent = name;        option.value = name;        const option = document.createElement("option");        activitiesList.appendChild(activityCard);        `;          ${participantsHTML}          <p><strong>Availability:</strong> ${spotsLeft} spots left</p>          <p><strong>Schedule:</strong> ${details.schedule}</p>          <p>${details.description}</p>          <h4>${name}</h4>        activityCard.innerHTML = `        }          `;            </div>              <p class="no-participants">No one has signed up yet.</p>              <strong>Participants:</strong>            <div class="participants-section">          participantsHTML = `        } else {          `;            </div>              </ul>                ${details.participants.map(p => `<li>${p}</li>`).join("")}              <ul class="participants-list">              <strong>Participants:</strong>            <div class="participants-section">          participantsHTML = `        if (details.participants.length > 0) {        let participantsHTML = "";        // Participants section        const spotsLeft = details.max_participants - details.participants.length;        activityCard.className = "activity-card";        const activityCard = document.createElement("div");      Object.entries(activities).forEach(([name, details]) => {      activitiesList.innerHTML = "";      const activities = await response.json();      const response = await fetch("/activities");    try {  async function fetchActivities() {  const activitySelect = document.getElementById("activity-select");  const activitiesList = document.getElementById("activities-list");  const activitiesList = document.getElementById("activities-list");
   const activitySelect = document.getElementById("activity");
   const signupForm = document.getElementById("signup-form");
   const messageDiv = document.getElementById("message");
